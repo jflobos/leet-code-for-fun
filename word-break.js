@@ -14,7 +14,7 @@
       return currentWord.indexOf(word) === 0;
   }
   
-  function searchWords(currentWord, wordDict, target) {
+  function searchWords(currentWord, wordDict) {
       if (memo[currentWord]) {
           return false;
       }
@@ -36,6 +36,6 @@
       return false;
   }
   
-  return searchWords(s, wordDict, '');
+  return searchWords(s, wordDict);
   
 };
